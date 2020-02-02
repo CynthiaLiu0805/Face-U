@@ -18,9 +18,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
-    
     @IBOutlet weak var returnButton: UIButton!
     
+   
     
     
     override func viewDidLoad() {
@@ -40,8 +40,8 @@ class SignUpViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(signUpButton)
-        
         Utilities.styleFilledButton(returnButton)
+
         
     }
     
@@ -95,14 +95,10 @@ class SignUpViewController: UIViewController {
                      self.showError("Error creating user")
                  }
                  else {
+                    guard let userID = Auth.auth().currentUser?.uid else { return }
                      //user was created successfully, now store the first name and last name
                      let db = Firestore.firestore()
-                     db.collection("users").addDocument(data: ["firstname" : firstName, "lastname" : lastName, "uid" : result!.user.uid ]) { (error) in
-                         if error != nil {
-                             //there was an error
-                             self.showError("Error saving user data")
-                         }
-                     }
+                    db.collection("users").document(userID).setData(["firstname" : firstName, "lastname" : lastName, "uid" : result!.user.uid, "predictions":[] ])
                      //Transition to the home screen
                   self.transitionToHome()
                  }

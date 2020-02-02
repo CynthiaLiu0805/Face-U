@@ -10,5 +10,6 @@ target 'QHacks2020' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
-
+	pod 'Firebase/Database'
+	pod 'Charts'
 end

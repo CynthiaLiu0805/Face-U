@@ -13,13 +13,10 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
-  
-    @IBOutlet weak var hand: UIImageView!
-    
-    @IBOutlet weak var form: UIImageView!
-    
-    @IBOutlet weak var name: UIImageView!
 
+    @IBOutlet weak var hand: UIImageView!
+    @IBOutlet weak var form: UIImageView!
+    @IBOutlet weak var name: UIImageView!
     
     
     override func viewDidLoad() {

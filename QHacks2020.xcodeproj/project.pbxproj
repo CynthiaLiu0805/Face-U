@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801D9CD923E5632C00070067 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D9CD823E5632C00070067 /* AnalyzeViewController.swift */; };
+		801D9CE023E5DBD500070067 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D9CDF23E5DBD500070067 /* SelectionViewController.swift */; };
+		801D9CE223E5DCA600070067 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D9CE123E5DCA600070067 /* ResultViewController.swift */; };
+		801D9CE423E5FA0700070067 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D9CE323E5FA0700070067 /* UIImage+Extension.swift */; };
+		801D9CF423E67D1E00070067 /* NSUIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D9CF323E67D1E00070067 /* NSUIColor+Hex.swift */; };
 		80FE7DAD23E3E03300E67E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE7DAC23E3E03300E67E47 /* AppDelegate.swift */; };
 		80FE7DAF23E3E03300E67E47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE7DAE23E3E03300E67E47 /* SceneDelegate.swift */; };
 		80FE7DB423E3E03300E67E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FE7DB223E3E03300E67E47 /* Main.storyboard */; };
@@ -25,7 +30,12 @@
 /* Begin PBXFileReference section */
 		0ACAC7301EE2F141A1A66546 /* Pods_QHacks2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QHacks2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC60CAF479363A75191830F /* Pods-QHacks2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHacks2020.release.xcconfig"; path = "Target Support Files/Pods-QHacks2020/Pods-QHacks2020.release.xcconfig"; sourceTree = "<group>"; };
-		80FE7DA923E3E03300E67E47 /* QHacks2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHacks2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801D9CD823E5632C00070067 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
+		801D9CDF23E5DBD500070067 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		801D9CE123E5DCA600070067 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		801D9CE323E5FA0700070067 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		801D9CF323E67D1E00070067 /* NSUIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUIColor+Hex.swift"; sourceTree = "<group>"; };
+		80FE7DA923E3E03300E67E47 /* Face·U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face·U.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE7DAC23E3E03300E67E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FE7DAE23E3E03300E67E47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		80FE7DB323E3E03300E67E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,7 +86,7 @@
 		80FE7DAA23E3E03300E67E47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80FE7DA923E3E03300E67E47 /* QHacks2020.app */,
+				80FE7DA923E3E03300E67E47 /* Face·U.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +94,6 @@
 		80FE7DAB23E3E03300E67E47 /* QHacks2020 */ = {
 			isa = PBXGroup;
 			children = (
-				80FE7DCE23E3EAB300E67E47 /* GoogleService-Info.plist */,
 				80FE7DC323E3E0E000E67E47 /* ViewControllers */,
 				80FE7DC023E3E0C100E67E47 /* Utilities */,
 				80FE7DAC23E3E03300E67E47 /* AppDelegate.swift */,
@@ -93,7 +102,7 @@
 				80FE7DB523E3E03400E67E47 /* Assets.xcassets */,
 				80FE7DB723E3E03400E67E47 /* LaunchScreen.storyboard */,
 				80FE7DBA23E3E03400E67E47 /* Info.plist */,
-				80FE7DD123E3EF2600E67E47 /* Constants.swift */,
+				80FE7DCE23E3EAB300E67E47 /* GoogleService-Info.plist */,
 			);
 			path = QHacks2020;
 			sourceTree = "<group>";
@@ -101,6 +110,9 @@
 		80FE7DC023E3E0C100E67E47 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				80FE7DD123E3EF2600E67E47 /* Constants.swift */,
+				801D9CE323E5FA0700070067 /* UIImage+Extension.swift */,
+				801D9CF323E67D1E00070067 /* NSUIColor+Hex.swift */,
 				80FE7DC123E3E0D300E67E47 /* Utilities.swift */,
 			);
 			path = Utilities;
@@ -113,6 +125,9 @@
 				80FE7DC823E3E53200E67E47 /* SignUpViewController.swift */,
 				80FE7DCA23E3E54F00E67E47 /* LoginViewController.swift */,
 				80FE7DCC23E3E57700E67E47 /* MainViewController.swift */,
+				801D9CD823E5632C00070067 /* AnalyzeViewController.swift */,
+				801D9CDF23E5DBD500070067 /* SelectionViewController.swift */,
+				801D9CE123E5DCA600070067 /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,7 +159,7 @@
 			);
 			name = QHacks2020;
 			productName = QHacks2020;
-			productReference = 80FE7DA923E3E03300E67E47 /* QHacks2020.app */;
+			productReference = 80FE7DA923E3E03300E67E47 /* Face·U.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -241,14 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801D9CE423E5FA0700070067 /* UIImage+Extension.swift in Sources */,
 				80FE7DCD23E3E57700E67E47 /* MainViewController.swift in Sources */,
+				801D9CF423E67D1E00070067 /* NSUIColor+Hex.swift in Sources */,
 				80FE7DCB23E3E54F00E67E47 /* LoginViewController.swift in Sources */,
+				801D9CD923E5632C00070067 /* AnalyzeViewController.swift in Sources */,
 				80FE7DAD23E3E03300E67E47 /* AppDelegate.swift in Sources */,
+				801D9CE023E5DBD500070067 /* SelectionViewController.swift in Sources */,
 				80FE7DC223E3E0D300E67E47 /* Utilities.swift in Sources */,
 				80FE7DAF23E3E03300E67E47 /* SceneDelegate.swift in Sources */,
 				80FE7DC723E3E4FF00E67E47 /* HomeViewController.swift in Sources */,
 				80FE7DC923E3E53200E67E47 /* SignUpViewController.swift in Sources */,
 				80FE7DD223E3EF2600E67E47 /* Constants.swift in Sources */,
+				801D9CE223E5DCA600070067 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiwooLee.QHacks2020;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Face·U";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -420,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiwooLee.QHacks2020;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Face·U";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

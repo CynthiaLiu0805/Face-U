@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
         Utilities.styleFilledButton(loginButton)
         Utilities.styleFilledButton(returnButton)
 
+        
     }
     
     
@@ -53,7 +54,7 @@ class LoginViewController: UIViewController {
                 }
                 else {
                     //user signed in successfully; go to home screen
-                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.mainViewController) as? MainViewController
+                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.selectionViewController) as? SelectionViewController
                     self.view.window?.rootViewController = homeViewController
                     self.view.window?.makeKeyAndVisible()
                 }
